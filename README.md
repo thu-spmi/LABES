@@ -35,7 +35,7 @@ We release the models that obtain the best results in Table 1 and Table 2. Run t
 ```
 python train.py -mode test -dataset camrest -method cvae -c eval_load_path=experiments/camrest/camrest_best beam_search=True
 python train.py -mode test -dataset kvret -method cvae -c eval_load_path=experiments/kvret/kvret_best beam_search=True
-python train.py -mode test -dataset multiwoz -method cvae -c eval_load_path=experiments/multiwoz/multiwoz_best beam_search=True
+python train.py -mode test -dataset multiwoz -method bssmc -c eval_load_path=experiments/multiwoz/multiwoz_best beam_search=True
 ```
 
 
